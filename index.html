@@ -31,6 +31,9 @@ a:link {text-decoration: none;}
 .padding{padding:8px 16px}
 .card{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
 .hover-opacity:hover{opacity:0.60}
+.right{float:right;}
+.image{max-width:100%;height:auto}
+.botleft{position:absolute;left:0;bottom:0}
 
 </style>
 <body>
@@ -40,7 +43,7 @@ a:link {text-decoration: none;}
   <div class="padding card" style="letter-spacing:4px;background-color:#D9E8F7">
     <a href="#home" class=" button">Diana Liu</a>
     <!-- Right-sided navbar links. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
+    <div class="right">
       <a href="#about" class="button">About</a>
       <div class="drpbutton">
         <a href="#outfits" class="button">Outfits</a>
@@ -56,10 +59,10 @@ a:link {text-decoration: none;}
 </div>
 
 <!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-  <img class="w3-image" src="https://github.com/dliu320/dliu320.github.io/blob/master/images/aboutMe.JPG" alt="camera" width="1600" height="800" style="opacity: .95">
-  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-    <h1 class="w3-xxlarge" style="color:#EDF4FB">Ponce City Market</h1>
+<header style="max-width:1600px;min-width:500px" id="home">
+  <img class="image" src="https://github.com/dliu320/dliu320.github.io/blob/master/images/aboutMe.JPG" alt="camera" width="1600" height="800" style="opacity: .95">
+  <div class="botleft" style="padding:12px 24px;">
+    <h1 style="color:#D9E8F7;letter-spacing:4px;font-size: 36px;">Ponce City Market</h1>
   </div>
 </header>
 
