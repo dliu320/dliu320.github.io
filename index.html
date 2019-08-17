@@ -11,6 +11,48 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display";
   letter-spacing: 5px;
 }
+/* Flaired edges, by Tomas Theunissen */
+hr{overflow: visible;height: 30px;border-style: solid;border-color: #D9E8F7;border-width: 1px 0 0 0;border-radius: 30px;
+}hr:before {display: block;content: "";height: 30px;margin-top: -31px;border-style: solid;border-color: #D9E8F7;border-width: 0 0 1px 0;border-radius: 30px;
+}
+html {
+  scroll-behavior: smooth;
+}
+@media screen and (max-width: 481px) {
+#main, #subnav{
+  float: left;
+  padding:0;
+  width: 94%;
+  margin: 3%;
+}
+#subnav dt{
+  padding:0;
+  margin-top:0;
+}
+#subnav {
+  border-right: 1px dotted #aaa;
+  border-bottom: 1px dotted #aaa;
+}
+#logo{
+  font-size: 45px;
+}
+#menu {
+  text-align:center;
+  padding:0;
+}
+#menu li{
+  display:inline-block;
+  margin:1.25% .5% 1.25% .5%;
+  border-left: 0;
+  padding:1%;
+  border:1px solid white;
+}
+#menu li a{
+  color:white;
+  text-decoration: none;
+}
+}
+
 .row {content:"";display:table;clear:both;padding-top:64px;}
 .center{text-align: center}
 .tricolumn{padding: 64px; float:left; width:33.33%;}
@@ -26,6 +68,7 @@ h1, h2, h3, h4, h5, h6 {
 .container:after,.container:before{content:"";display:table;clear:both}
 .zoom:hover {transform: scale(1.5);}
 .fitPic{border-radius:8px;height:300;width:225;margin-left: 40}
+.iconZoom:hover {transform: scale(7);}
 .instaText{padding-left: 47}
 a:link {text-decoration: none;}
 .padding{padding:8px 16px}
@@ -34,6 +77,15 @@ a:link {text-decoration: none;}
 .right{float:right;}
 .image{max-width:100%;height:auto}
 .botleft{position:absolute;left:0;bottom:0}
+.scrolling-box {
+  background-color: #eaeaea;
+  display: block;
+  height: 200px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  text-align: center;
+  width: 200px;
+}
 
 </style>
 <body>
@@ -58,6 +110,11 @@ a:link {text-decoration: none;}
   </div>
 </div>
 
+<head>
+  <title> Diana Liu </title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+</head>
+
 <!-- Header -->
 <header style="max-width:1600px;min-width:500px" id="home">
   <img class="image" src="images/aboutMe.JPG" alt="camera" width="1600" height="800" style="opacity: .95">
@@ -78,11 +135,10 @@ a:link {text-decoration: none;}
       <p style="font-size:18">I'm currently a second year at the Georgia Institute of Technology studying computer science. After working at Urban Outfitters, I was inspired to combine my two passions for CS and fashion together. I wanted a platform where I could showcase some of my favorite outfits. </p>
     </div>
   </div>
-
   <hr>
 
   <!-- Outfit Grid -->
-  <div class="row" style="padding-left: 64" id="outfits">
+  <div class="row"  style="padding-left: 64" id="outfits">
   <h1 class="center" id="beaches">Outfits</h1><br>
     <h1 class="center" style="font-size: 20">Cutest Beaches</h1>
     <div class="row">
@@ -103,8 +159,8 @@ a:link {text-decoration: none;}
         <img src="images/christina1.jpeg" alt="filler" class="zoom fitPic">
         <h4><a href="https://www.instagram.com/dyanosaur_/" class="instaText" target="_blank">@filler</a></h4>
         <p style="color:#757575">lmao filler</p><br>
-        </div>
       </div>
+    </div>
     <hr>
     <div class="row" id="outAbout">
       <h1 class="center" style="font-size: 20">Out and About</h1>
@@ -149,7 +205,10 @@ a:link {text-decoration: none;}
         <div class="tricolumn" style="width:33.33%;float:left;">
           <img src="images/roland.JPG" alt="roland" class="zoom fitPic" style="width: 225">
           <h4><a href="https://www.instagram.com/_rolandkeng_/" class="instaText" target="_blank">@_rolandkeng_</a></h4>
-          <p style="color:#757575">?</p>
+          <img src="images/roland1.JPG" alt="roland1" class="iconZoom" style="width:50px;height:35px;margin-left:100">
+          <p style="color:#757575">Top: Asos Oversized Tee</p>
+          <p style="color:#757575">Bottom: Asos Skinny Chinos</p>
+          <p style="color:#757575">Shoes: Nike Triple White 97s</p>
         </div>
 
         <div class="tricolumn">
@@ -180,7 +239,7 @@ a:link {text-decoration: none;}
         <div class="tricolumn">
           <img src="images/christina.jpg" alt="christina" class="zoom fitPic" style="width:200">
           <h4><a href="https://www.instagram.com/christinazhow/" class="instaText" target="_blank"c>@christinazhow</a></h4>
-          <img  class="zoom" src="images/christina1.jpeg" alt="christina1" style="width:50px;height:35px;margin-left:100 ">
+          <img  class="iconZoom" src="images/christina1.jpeg" alt="christina1" style="width:50px;height:35px;margin-left:100 ">
         </div>
       </div>
     </div>
