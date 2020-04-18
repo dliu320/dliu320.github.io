@@ -1,1 +1,103 @@
-sfs
+<!tools html>
+<html>
+<title> blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+/* Flaired edges, by Tomas Theunissen */
+hr{overflow: visible;height: 30px;border-style: solid;border-color: #D9E8F7;border-width: 1px 0 0 0;border-radius: 30px;
+}hr:before {display: block;content: "";height: 30px;margin-top: -31px;border-style: solid;border-color: #D9E8F7;border-width: 0 0 1px 0;border-radius: 30px;
+}
+html {
+  scroll-behavior: smooth;
+}
+@media screen and (max-width: 480px) {}    /* simply minimizes the web screen to fit?*/
+@media screen and (max-width: 400px) {
+  .figure,
+  li#f-mycroft {
+    margin-right: 3.317535545023696682%;    /* 21px / 633px */
+    width: 48.341232227488151658%;          /* 306px / 633px */
+  }  li#f-watson,
+  li#f-moriarty {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mast,
+  .intro,
+  .main,
+  .footer {
+    float: none;
+    width: auto;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .figure,
+  li#f-mycroft {
+    margin-right: 3.317535545023696682%;    /* 21px / 633px */
+    width: 13.902053712480252764%;          /* 88px / 633px */
+  }
+}
+
+.row {content:"";display:table;clear:both;padding-top:64px;}
+.center{text-align: center}
+.tricolumn{padding: 64px; float:left; width:33.33%;}
+.button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap;}
+.drpbutton{position: relative; display: inline-block;}
+.button:hover{color:#000;background-color:#ccc}
+.button-content{display: none;position: absolute;min-width: 160px;box-shadow: 0px 2px 5px 0px rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,0.12);z-index: 1;}
+.button-content a {color: black;padding: 12px 16px;text-decoration: none;display: block;background-color: #D9E8F7;}
+.button-content a:hover{color:#ccc;}
+.drpbutton:hover .button-content{display: block;}
+.top{position:fixed;width:100%;z-index:1;top:0}
+.container{padding:0.01em 16px;width: 100%;}
+.container:after,.container:before{content:"";display:table;clear:both}
+.zoom:hover {transform: scale(1.5);}
+.fitPic{border-radius:8px;height:300;width:225;margin-left: 40}
+.iconZoom:hover {transform: scale(7);}
+.instaText{padding-left: 47}
+a:link {text-decoration: none;}
+.padding{padding:8px 16px}
+.card{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.hover-opacity:hover{opacity:0.60}
+.right{float:right;}
+.image{max-width:100%;height:auto}
+.botleft{position:absolute;left:0;bottom:0}
+.scrolling-box {
+  background-color: #eaeaea;
+  display: block;
+  height: 200px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  text-align: center;
+  width: 200px;
+}
+
+</style>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="top" >
+  <div class="padding card" style="letter-spacing:4px;background-color:#D9E8F7">
+    <a href="#home" class=" button">Diana Liu</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="right">
+      <a href="#about" class="button">About</a>
+      <div class="drpbutton">
+        <a href="#outfits" class="button">Recipes</a>
+        <div class="button-content card">
+          <a href="#beaches">Beaches</a>
+          <a href="#outAbout">Out and About</a>
+          <a href="#street">Street</a>
+          <a href="#brewtifuls">Brewtifulsow </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
